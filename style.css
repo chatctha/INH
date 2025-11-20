@@ -38,12 +38,23 @@ h1 {
     flex-wrap: wrap;
 }
 
-.controls input {
+.controls .input-group {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    min-width: 200px;
+}
+
+.controls label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.controls input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: var(--border-radius);
-    min-width: 200px;
 }
 
 #results {

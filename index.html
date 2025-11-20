@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pump Data Viewer</title>
+    <title>Inhibitor Pump Adjust</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
-        <h1>Pump Data Viewer</h1>
+        <h1>Inhibitor Pump Adjust</h1>
         <div class="controls">
-            <input type="number" id="load-input" placeholder="Enter Load %">
-            <input type="text" id="pump-filter" placeholder="Filter by Pump Tag">
+            <div class="input-group">
+                <label for="load-input">% Load</label>
+                <input type="number" id="load-input" placeholder="Enter Load %">
+            </div>
+            <div class="input-group">
+                <label for="pump-filter">Pump search</label>
+                <input type="text" id="pump-filter" placeholder="Filter by Pump Tag">
+            </div>
         </div>
         <div id="results">
             <table>
@@ -21,7 +27,7 @@
                         <th>Destination</th>
                         <th>Inhibitor</th>
                         <th>Drum</th>
-                        <th>Value</th>
+                        <th>%Stroke</th>
                     </tr>
                 </thead>
                 <tbody id="results-body">
