@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pump Data Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Pump Data Viewer</h1>
+        <div class="controls">
+            <input type="number" id="load-input" placeholder="Enter Load %">
+            <input type="text" id="pump-filter" placeholder="Filter by Pump Tag">
+        </div>
+        <div id="results">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feed pump</th>
+                        <th>Destination</th>
+                        <th>Inhibitor</th>
+                        <th>Drum</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
